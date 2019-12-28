@@ -1,0 +1,73 @@
+{
+    "interactionModel": {
+      "languageModel": {
+        "invocationName": "mindstorms",
+        "intents": [
+          {
+            "name": "AMAZON.CancelIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.HelpIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.StopIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.NavigateHomeIntent",
+            "samples": []
+          },
+          {
+            "name": "SetBalanceIntent",
+            "slots": [
+              {
+                "name": "Balance",
+                "type": "AMAZON.NUMBER"
+              }
+            ],
+            "samples": [
+              "set balance {Balance}",
+              "set {Balance} balance",
+              "set balance to {Balance}"
+            ]
+          },
+          {
+            "name": "GetBalanceIntent",
+            "samples": [
+              "get balance",
+              "get current balance",
+              "what is balance",
+              "what is current balance"
+            ]
+          },
+          {
+            "name": "SetCommandIntent",
+            "slots": [
+              {
+                "name": "Command",
+                "type": "CommandType"
+              }
+            ],
+            "samples": [
+              "activate {Command} mode",
+              "activate {Command}"
+            ]
+          }
+        ],
+        "types": [
+          {
+            "name": "CommandType",
+            "values": [
+              {
+                "name": {
+                  "value": "detect"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
